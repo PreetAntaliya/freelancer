@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+:root {
+    --header-bg-color: #080D17;
+    --white_color: #ffffff;
+    --gray_color: #2d353a;
+    --light_blue_color: #30a0f5;
+    --poppins: 'Poppins', sans-serif;
+    --roboto: 'Roboto', sans-serif;
+    --font_16_30_400: 400 16px/30px var(--poppins);
+    --font_16_30_300: 300 16px/30px var(--poppins);
+    --font_18_30_400: 400 18px/30px var(--poppins);
+    --font_22_38_400: 400 22px/38px var(--poppins);
+    --font_24_38_600: 600 24px/38px var(--roboto);
+    --font_42_50_600: 600 42px/50px var(--roboto);
+    --font_45_60_700: 700 45px/60px var(--roboto);
+}
+
+/* @media(min-width:1440px){
+    .container{
+        max-width: 1440px;
+    }
+} */
+
+.font_16_30_400{
+    font: var(--font_16_30_400);
+}
+
+.font_16_30_300{
+    font: var(--font_16_30_300);
+}
+
+.font_18_30_400 {
+    font: var(--font_18_30_400);
+}
+
+.font_22_38_400 {
+    font: var(--font_22_38_400);
+}
+
+.font_24_38_600 {
+    font: var(--font_24_38_600);
+}
+
+.font_42_50_600 {
+    font: var(--font_42_50_600);
+}
+
+.font_45_60_700 {
+    font: var(--font_45_60_700);
+}
+
+.white_color {
+    color: var(--white_color);
+}
+
+.light_blue_color{
+    color: var(--light_blue_color);
+}
+
+a:hover,
+a {
+    color: var(--white_color);
+    text-decoration: none;
+}
+
+body {
+    background-color: #01040B;
+}
+
+header {
+    background-color: var(--header-bg-color);
+    padding: 26px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9999;
+}
+
+header .menu ul li,
+header .menu ul li a {
+    transition: all 0.2s;
+}
+
+header .menu ul li:hover a {
+    color: #5654FF;
+
+}
+
+header .menu ul li:hover::after {
+    content: '';
+    position: absolute;
+    width: 22px;
+    border-radius: 20px;
+    height: 3px;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #5654FF;
+    box-shadow: 0 0 4px #072FBA;
+    transition: all 0.2s;
+}
+
+/* banner section */
+
+.banner {
+    margin-top: 92px;
+    /* min-height: calc(100vh - 92px); */
+}
+
+.banner .banner_title {
+    letter-spacing: 1.8px;
+}
+
+.banner_para p {
+    opacity: 0.6;
+}
+
+.banner .banner_get_card a {
+    padding: 18px 50px;
+    background-image: linear-gradient(184deg, #309ef7, #5654ff);
+    border-radius: 50px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.banner .banner_get_card button {
+    /* padding: 22px 100px; */
+    /* height: 100%; */
+}
+
+.banner .banner_img img {
+    max-width: 570px;
+    width: 90%;
+}
+.banner .bg_line img{
+    max-width: 1100px;
+    width: 90%;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-40%);
+    z-index: -1;
+}
+/* Trust section */
+
+.trust .trust_main {
+    position: relative;
+    border-radius: 10px;
+    background-image: linear-gradient(rgb(28 32 42), rgb(3 6 15) 80%);
+    background-clip: padding-box;
+}
+
+.trust .trust_main::after {
+    position: absolute;
+    top: -1px;
+    bottom: -1px;
+    left: -1px;
+    right: -1px;
+    background: linear-gradient(rgb(58 60 78), rgb(8 11 18));
+    content: '';
+    z-index: -1;
+    border-radius: 10px;
+}
+
+.choose_paynow_inner_bg {
+    padding: 40px 45px;
+    position: relative;
+    border-radius: 10px;
+    background-image: linear-gradient(rgb(28 32 42), rgb(3 6 15) 80%);
+    background-clip: padding-box;
+    height: 100%;
+}
+
+.choose_paynow_inner_bg::after {
+    position: absolute;
+    top: -1px;
+    bottom: -1px;
+    left: -1px;
+    right: -1px;
+    background: linear-gradient(rgb(58 60 78), rgb(8 11 18));
+    content: '';
+    z-index: -1;
+    border-radius: 10px;
+}
+
+.trust .trust_main .trust_icon img {
+    width: 34px;
+}
+
+.trust .trust_main .trust_detail {
+    opacity: 0.6;
+}
+
+/* about paynow section */
+
+.about_paynow .about_paynow_detail {
+    opacity: 0.8;
+}
+
+.commitmnet_title::after,
+.choose_paynow .choose_paynow_main::after,
+.about_paynow .about_paynow_title::after {
+    content: '';
+    position: absolute;
+    width: 65px;
+    height: 8px;
+    background-color: var(--light_blue_color);
+    border-radius: 25px;
+    bottom: -18px;
+    right: 50%;
+}
+
+
+.commitmnet_title::before,
+.choose_paynow .choose_paynow_main::before,
+.about_paynow .about_paynow_title::before {
+    content: '';
+    position: absolute;
+    width: 133px;
+    height: 8px;
+    background-color: var(--gray_color);
+    border-radius: 25px;
+    bottom: -18px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.commitment_content {
+    margin-top: 35px;
+}
+
+
+/* footer */
+.commitmnet_detail,
+.footer_detail{
+    opacity: 0.8;
+}
+.footer_title h3{
+    font-weight: 500 !important;
+}
+
+.leaf_img{
+    right: 200px;
+    bottom: 0;
+}
+
+/* offcanvas */
+
+.offcanvas{
+    background-color: var(--header-bg-color);
+}
+
+.offcanvas .offcanvas-body ul li:hover::marker{
+    color: #5654ff;
+}
+.offcanvas .offcanvas-body ul li:hover{
+    list-style-type: disc;
+}
+.offcanvas .offcanvas-body ul li:hover a{
+    color: #309ef7;
+}
+
+
+
+@media(min-width:1400px){
+    
+} 
+@media(max-width:1399px){
+    :root {
+        --poppins: 'Poppins', sans-serif;
+        --roboto: 'Roboto', sans-serif;
+        --font_16_30_400: 400 16px/30px var(--poppins);
+        --font_16_30_300: 300 16px/30px var(--poppins);
+        --font_18_30_400: 400 18px/30px var(--poppins);
+        --font_22_38_400: 400 22px/38px var(--poppins);
+        --font_24_38_600: 600 24px/38px var(--roboto);
+        --font_42_50_600: 600 42px/50px var(--roboto);
+        --font_45_60_700: 700 42px/60px var(--roboto);
+    }
+}
+
+@media(max-width:1199px){
+    :root {
+        --poppins: 'Poppins', sans-serif;
+        --roboto: 'Roboto', sans-serif;
+        --font_16_30_400: 400 15px/24px var(--poppins);
+        --font_16_30_300: 300 15px/24px var(--poppins);
+        --font_18_30_400: 400 16px/24px var(--poppins);
+        --font_22_38_400: 400 20px/30px var(--poppins);
+        --font_24_38_600: 600 24px/38px var(--roboto);
+        --font_42_50_600: 600 36px/50px var(--roboto);
+        --font_45_60_700: 700 38px/44px var(--roboto);
+    }
+    .banner .banner_get_card a{
+        padding: 14px 30px;
+        font-size: 18px;
+    }
+    .banner .banner_get_card a .right_arrow{
+        width: 18px;
+    }
+    .choose_paynow_inner_bg {
+        padding: 20px 26px;
+    }
+}
+
+@media(max-width:991px){
+    :root {
+        --poppins: 'Poppins', sans-serif;
+        --roboto: 'Roboto', sans-serif;
+        --font_16_30_300: 300 16px/30px var(--poppins);
+        --font_18_30_400: 400 18px/30px var(--poppins);
+        --font_22_38_400: 400 18px/24px var(--poppins);
+        --font_24_38_600: 600 24px/38px var(--roboto);
+        --font_42_50_600: 600 32px/50px var(--roboto);
+        --font_45_60_700: 700 30px/35px var(--roboto);
+    }
+    .banner .bg_line img{
+        max-width: 600px;
+        width: 90%;
+        /* top: 50; */
+        transform: translateY(-50%);
+    }
+}
+
+@media(max-width:767px){
+    :root {
+        --poppins: 'Poppins', sans-serif;
+        --roboto: 'Roboto', sans-serif;
+        --font_16_30_300: 300 16px/30px var(--poppins);
+        --font_18_30_400: 400 18px/30px var(--poppins);
+        --font_22_38_400: 400 18px/24px var(--poppins);
+        --font_24_38_600: 600 24px/38px var(--roboto);
+        --font_42_50_600: 600 32px/50px var(--roboto);
+        --font_45_60_700: 700 26px/35px var(--roboto);
+    }
+    .banner .banner_img img{
+        position:  relative !important;
+    }
+}
+
+@media(max-width:575px){
+    :root {
+        --poppins: 'Poppins', sans-serif;
+        --roboto: 'Roboto', sans-serif;
+        --font_16_30_300: 300 16px/30px var(--poppins);
+        --font_18_30_400: 400 18px/30px var(--poppins);
+        --font_22_38_400: 400 18px/24px var(--poppins);
+        --font_24_38_600: 600 24px/38px var(--roboto);
+        --font_42_50_600: 600 32px/50px var(--roboto);
+        --font_45_60_700: 700 26px/35px var(--roboto);
+    }
+}

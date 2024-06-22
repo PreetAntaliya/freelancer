@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CTX - Register</title>
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css"></link>
+
+    <!-- SLICK -->
+    <link rel="stylesheet" href="./assets/css/slick-theme.css"></link>
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css"></link>
+
+</head>
+
+<body>
+    <main>
+        <div class="row">
+            <div class="col-lg-6 order-lg-1 col-sm-12 order-2">
+                <div class="login-content position-relative">
+                    <div class="d-flex align-items-center h-100">
+                        <div class="register">
+                            <h2 class="d-flex justify-content-center text-center">Register with Ctiex Global</h2>
+                            <div class="para d-flex justify-content-center align-items-center">
+                                <p class="text-color f-14-18-400 d-flex justify-content-center w-75 text-center">Sign Up
+                                    to unlock exciting experience with our services.</p>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <input type="text" name="fname" id="fname" placeholder="Enter First Name">
+                                </div>
+                                <div class="col-sm-6">
+                                    <input type="text" name="lname" id="lname" placeholder="Enter Last Name">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="password position-relative col-sm-6 d-flex align-items-center">
+                                    <input type="password" name="password" id="password" placeholder="Enter Password">
+                                    <div class="eye position-absolute" onclick="showPassword('password','pass')">
+                                        <img src="assets/img/Eye.svg" id="pass" alt="showPassword">
+                                    </div>
+                                </div>
+                                <div class="password position-relative col-sm-6 d-flex align-items-center">
+                                    <input type="password" name="password" id="re-password"
+                                        placeholder="Re-Enter Password">
+                                    <div class="eye position-absolute" onclick="showPassword('re-password','re-pass')">
+                                        <img src="assets/img/Eye.svg" id="re-pass" alt="showPassword">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <input type="email" name="email" id="email" placeholder="Enter Email Address">
+                                </div>
+                                <div class="col-sm-6">
+                                    <input type="tel" name="contact" id="contact" placeholder="Contact Number">
+                                </div>
+                            </div>
+                            <div class="row align-items-center">
+                                <div class="col-sm-4">
+                                    <select name="id_type" id="id_type">
+                                        <option value="" selected disabled>Select ID Type</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-4">
+                                    <input type="text" name="id_num" id="id_num" placeholder="ID Number">
+                                </div>
+                                <div class="col-sm-4">
+                                    <select name="gender" id="gender">
+                                        <option value="" class="text-color" selected disabled>Select a Gender</option>
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <input type="text" name="birthdate" id="birthdate" onfocus="(this.type='date')"
+                                        onblur="(this.type='text')" placeholder="Birth Date">
+                                </div>
+                                <div class="col-sm-6">
+                                    <select name="country" id="country">
+                                        <option value="" selected disabled>Country</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <input type="text" name="state" id="state" placeholder="State">
+                                </div>
+                                <div class="col-sm-6">
+                                    <input type="text" name="zipcode" id="zipcode" placeholder="Zip Code">
+                                </div>
+                            </div>
+                            <div class="agree d-flex align-items-center">
+                                <input type="checkbox" name="agree" id="agree" class="m-0">
+                                <label for="agree" class="m-0">I have read and agree to the <a href="#">Clients Agreement</a></label>
+                            </div>
+                            <div class="continue btn d-flex justify-content-center mt-5">
+                                <button>Continue</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 order-lg-2 col-sm-12 order-1  position-relative">
+                <div class="top-bar position-absolute d-flex justify-content-end">
+                    <div class="language align-items-center d-flex">
+                        <img class="px-2" src="assets/img/Group.svg" alt="">
+                        <span>EN</span>
+                    </div>
+                    <span><a href="register.html">REGISTER</a></span>
+                    <span><a href="login.html">LOGIN</a></span>
+                </div>
+                <div class="login-bg white-2 d-flex align-items-center">
+                    <div class="login-imgs w-100">
+                        <div class="logo register-logo d-flex justify-content-center mb-md-5 my-sm-5">
+                            <img src="assets/img/logo.svg" alt="">
+                        </div>
+                        <div class="login-group d-flex justify-content-center">
+                            <img src="assets/img/register.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <script src="assets/js/jquery-3.6.4.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTX - Dashboard</title>
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    </link>
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="./assets/css/font-awesome.min.css"></link>
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css"></link>
+
+</head>
+
+<body class="white-2 contain">
+    <header>
+        <div class="d-flex justify-content-between">
+            <div class="logo">
+                <img src="assets/img/logo.svg" alt="logo">
+            </div>
+            <div class="top-menu d-flex align-items-center position-relative">
+                <nav class=" d-xl-block  d-sm-none d-xs-none">
+                    <ul class="d-flex align-items-xl-center align-items-lg-start" type="none">
+                        <li>
+                            <a href="profile.html"><i class="me-2 fa-solid fa-user"></i>Profile</a>
+                        </li>
+                        <li>
+                            <a href="report.html"><i class="me-2 fa-solid fa-clipboard"></i>Report</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="me-2 fa-solid fa-share-nodes"></i>Social Trade</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="me-2 fa-solid fa-vector-square"></i>Referral</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="me-2 fa-solid fa-earth-americas"></i>Web Trader</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="top-end-menu d-flex align-items-center">
+                    <div class="language align-items-center d-flex">
+                        <img class="px-2" src="assets/img/Group-2.svg" alt="language">
+                        <span class="position-relative">EN</span>
+                    </div>
+                    <div class="notification me-3">
+                        <img src="assets/img/bell.svg" alt="notification">
+                    </div>
+                    <div class="profile-img">
+                        <img src="assets/img/profile.png" alt="profile-pic">
+                    </div>
+                </div>
+                <div class="menu-icon d-xl-none d-sm-flex" id="toggle">
+                    <i class="fa-solid fa-bars" id="icon"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="bottom-header d-xl-none d-sm-block">
+        <div>
+            <ul class="d-flex align-items-center justify-content-evenly w-100 text-center my-2" type="none">
+                <li>
+                    <a href="profile.html"><i class="fa-solid fa-user"></i><br>Profile</a>
+                </li>
+                <li>
+                    <a href="report.html"><i class="fa-solid fa-clipboard"></i><br>Report</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-share-nodes"></i><br>Social Trade</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-vector-square"></i><br>Referral</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-earth-americas"></i><br>Web Trader</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-content d-flex flex-column justify-content-between">
+        <main>
+            <div class="d-flex position-relative">
+                <div class="side-bar responsive d-xl-block d-sm-none d-xs-none" id="add-class">
+                    <div class="cross text-end d-xl-none" id="cross">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="balance text-center">
+                        <h4>Wallet Balance</h4>
+                        <span>$ 90.95</span>
+                    </div>
+                    <div class="side-menu">
+                        <ul class="m-0 p-0" type="none">
+                            <li>
+                                <a href="account.html"><span><img src="assets/img/home_2_fill.svg" alt="Home">Account</span> <img src="assets/img/right_filled.svg" alt="right arrow"></a>
+                            </li>
+                            <li>
+                                <a href="deposit.html"><span><img src="assets/img/upload.svg" alt="Deposit">Deposit</span> <img src="assets/img/right_filled.svg" alt="right arrow"></a>
+                            </li>
+                            <li>
+                                <a href="cryptodeposit.html"><span><img src="assets/img/logout.svg" alt="Cryptodeposit">Cryptodeposit</span> <img src="assets/img/right_filled.svg" alt="right arrow"></a>
+                            </li>
+                            <li>
+                                <a href="withdraw.html"><span><img src="assets/img/download.svg" alt="Withdraw">Withdraw</span> <img src="assets/img/right_filled.svg" alt="right arrow"></a>
+                            </li>
+                            <li>
+                                <a href="cryptodeposit.html"><span><img src="assets/img/login.svg" alt="Cryptowithdraw">Cryptowithdraw</span> <img src="assets/img/right_filled.svg" alt="right arrow"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="account-detail white-color p-5">
+                    <h3>Hello, Account Name</h3>
+                    <p>Welcome to your profile! This is your dedicated space where you can customize your preferences, view your personal information, and manage various aspects of your account</p>
+                    <div class="money-detail">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-12">
+                                <div class="white-2 money-box">
+                                    <img src="assets/img/atm 1.svg" alt="">
+                                    <div class="money text-end">
+                                        <p class="m-0">Total Deposit</p>
+                                        <span>$ 197.84</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-12 m-md-0 mt-sm-4">
+                                <div class="white-2 money-box">
+                                    <img src="assets/img/exit 1.svg" alt="">
+                                    <div class="money text-end">
+                                        <p class="m-0">Total Deposit</p>
+                                        <span>$ 35.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-12 m-md-0 m-sm-auto my-sm-4">
+                                <div class="white-2 money-box">
+                                    <img src="assets/img/tax 1.svg" alt="">
+                                    <div class="money text-end">
+                                        <p class="m-0">Total Deposit</p>
+                                        <span>$ 20.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="download-center white-2 d-flex flex-wrap justify-content-between align-items-center">
+                            <div class="download-text">
+                                <h3>Download Platform</h3>
+                                <p>Download our platform for enhanced accuracy.</p>
+                            </div>
+                            <button class="download-btn">Download <i class="fa-solid fa-chevron-right ps-1"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    
+        <footer>
+            <div class="footer-menu d-flex flex-wrap justify-content-between align-items-center text-color">
+                <span>Reserved@ctxprop@2023</span>
+                <ul class="d-flex flex-wrap my-1 p-0" type="none">
+                    <li>
+                        <a href="#">Support</a>
+                    </li>
+                    <li>
+                        <a href="#">Terms of Service</a>
+                    </li>
+                    <li>
+                        <a href="#">Risk Disclosure</a>
+                    </li>
+                    <li>
+                        <a href="#">Cookie Policy</a>
+                    </li>
+                </ul>
+            </div>
+            <p class="text-color">This website is not directed at any jurisdiction and is not intended for any use that would be contrary to local law or regulation.</p>
+        </footer>
+    </div>
+
+    <script src="assets/js/jquery-3.6.4.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary_color: #868686;
+    --montserrat: 'Montserrat', sans-serif;
+}
+
+p,h1,h2,h3{
+    margin: 0;
+}
+ul{
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+
+button{
+    cursor: pointer;
+}
+
+body{
+    background-color: #00929c;
+    /* overflow-x: hidden; */
+    position: relative;
+}
+
+.primary_color{
+    color: var(--primary_color);
+}
+
+.f_12_15_500{
+    font: 500 12px/15px var(--montserrat);
+}
+
+.f_14_17_400{
+    font: 400 14px/17px var(--montserrat);
+}
+
+.f_20_25_700{
+    font: 700 20px/25px var(--montserrat);
+}
+
+.f_600{
+    font-weight: 600;
+}
+
+.f_700{
+    font-weight: 700;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 350px;
+    width: 100%;
+}
+
+.d_flex{
+    display: flex;
+}
+
+.d_block{
+    display: block;
+}
+
+.flex_Wrap{
+    flex-wrap: wrap;
+}
+
+.align_items_center{
+    align-items: center;
+}
+
+.justify_content_center{
+    justify-content: center;
+}
+
+.text_center{
+    text-align: center;
+}
+
+
+/* header */
+header{
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+a {
+    transition: all 0.3s ease;
+  }
+header nav ul{
+    justify-content: space-around; 
+}
+
+header nav ul li a{
+    color: #ffffff;
+}
+
+header nav ul li a span{
+    margin-top: 5px;
+}
+
+
+/* main section/banner */
+
+.bg_image{
+    position: relative;
+}
+
+.bg_image img{
+    width: 100%; 
+}
+
+.logo{
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.main_content{
+    margin: 0 auto;
+    background-color: white;
+    max-width: 390px;
+}
+
+.contact_us{
+    margin-top: 50px;
+}
+
+.contact_us .contact_us_heading h1{
+    margin: 0 ;
+}
+
+.contact_us .contact_us_heading p{
+    margin: 0;
+    color: var(--primary_color);
+}
+
+.contact_us .contact_us_detail ul,
+.contact_us .contact_us_row ul{
+    align-items: center;
+    justify-content: center;
+    padding-left: 0;
+}
+.contact_us .contact_us_row ul li a{
+    margin: 5px 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 100%;
+}
+
+.contact_us .contact_us_detail ul li{
+    margin: 20px 0;
+}
+.contact_us .contact_us_detail ul li .contact_icon{
+    padding: 7px;
+    margin-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 100%;
+}
+
+.contact_us .contact_us_detail ul li .contact_icon img{
+    width: 18px;
+    height: 18px;
+}
+
+.contact_us .contact_us_detail ul li .submit_wp_number input{
+    padding: 10px;
+    width: 65%;
+    outline: #868686;
+    border: 1px solid #EAEAEA;
+}
+.contact_us .contact_us_detail ul li .submit_wp_number button{
+    padding: 10px 15px;
+    color: #ffffff;
+    background-color: #51B14D;
+    outline: none;
+    border: none;
+    width: 35%;
+}
+.contact_us .contact_us_detail ul li .submit_wp_number button img{
+    padding-right: 8px;
+}
+
+.contact_us .contact_btn button img{
+    margin-right: 7px;
+}
+.contact_us .contact_btn button{
+    margin-top: 18px;
+    padding: 12px;
+    width: 50%;
+    border: 1px solid #000000;
+}
+.contact_us .contact_btn button:first-child{
+    background-color: #ffffff;
+}
+.contact_us .contact_btn button:last-child{
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* social_links */
+.social_links .social_links_heading{
+    margin: 30px 0 10px;
+}
+
+.social_links .social_links_icon > div > div {
+    margin: 10px 15px;
+}
+
+/* about_us */
+.about_us .about_us_detail{
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #F6F6F6;
+    border-radius: 10px;
+}
+
+.about_us .about_us_detail .about_us_heading h2{
+    margin-bottom: 12px;
+}
+
+.about_us .about_us_detail .about_us_service{
+    margin-top: 15px;
+}
+
+.about_us .about_us_detail .about_us_service ul {
+    margin-top: 15px;
+    padding-left: 25px;
+}
+
+.about_us .about_us_detail .about_us_service ul li::marker {
+    font-size: 10px; /* Adjust the size of the marker */
+}
+
+/* gallary */
+.gallary .gallary_heading{
+    margin-bottom: 5px;
+}
+
+.gallary .gallary_images {
+    justify-content: space-between;
+}
+
+.gallary .gallary_images div{
+    margin: 4px 0;
+    width: 112px;
+    height: 112px;
+    background-color: #D9D9D9;
+    border-radius: 14px;
+    overflow: hidden;
+}
+.gallary .gallary_images div img {
+    width: 112px;
+    height: 112px;
+}
+
+/* product */
+.product{
+    margin: 15px 0;
+}
+.product .product_card{
+    margin: 8px 0 15px;
+    border: 1px solid #D9D9D9;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.product .product_card img{
+    width: 100%;
+}
+
+.product .product_card .product_detail{
+    padding: 10px 15px;
+    justify-content: space-between;
+}
+
+.product .product_card .product_detail button{
+    padding: 5px 12px;
+    background: transparent;
+    border: 1px solid #868686;
+    border-radius: 3px;
+}
+
+.enquiry .enquiry_form{
+    border: 1px solid #EAEAEA;
+    border-radius: 12px;
+}
+
+.enquiry .enquiry_form .enquiry_heading{
+    padding: 15px 15px 0 15px ;
+}
+
+.enquiry .enquiry_form .enquiry_form_input{
+    padding: 15px;
+}
+.enquiry .enquiry_form .enquiry_form_input textarea,
+.enquiry .enquiry_form .enquiry_form_input input{
+    margin: 6px 0;
+    padding: 10px;
+    width: 100%;
+    /* width: 295px; */
+    border: 1px solid #D4D4D4;
+    border-radius: 5px;
+    outline: none;
+    resize: none;
+}
+
+.enquiry .enquiry_form .enquiry_form_input div{
+    text-align: end;
+}
+
+.enquiry .enquiry_form .enquiry_form_input div button{
+    padding: 7px 15px;
+    color: #ffffff;
+    background-color: #000000;
+    border: none;
+    border-radius: 4px;
+}
+
+.copy_right{
+    margin: 15px 0 73px;
+    padding-bottom: 15px;
+}

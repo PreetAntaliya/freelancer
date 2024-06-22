@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mail</title>
+    <style>
+        @font-face {
+            font-family: 'Lexend Deca';
+            src: url('/fonts/LexendDeca-Bold.woff2') format('woff2'),
+                url('/fonts/LexendDeca-Bold.woff') format('woff');
+            font-weight: bold;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Lexend Deca';
+            src: url('/fonts/LexendDeca-Medium.woff2') format('woff2'),
+                url('/fonts/LexendDeca-Medium.woff') format('woff');
+            font-weight: 500;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Lexend Deca';
+            src: url('/fonts/LexendDeca-ExtraBold.woff2') format('woff2'),
+                url('/fonts/LexendDeca-ExtraBold.woff') format('woff');
+            font-weight: bold;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Lexend Deca';
+            src: url('/fonts/LexendDeca-Thin.woff2') format('woff2'),
+                url('/fonts/LexendDeca-Thin.woff') format('woff');
+            font-weight: 100;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Lexend Deca';
+            src: url('/fonts/LexendDeca-SemiBold.woff2') format('woff2'),
+                url('/fonts/LexendDeca-SemiBold.woff') format('woff');
+            font-weight: 600;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Lexend Deca';
+            src: url('/fonts/LexendDeca-Regular.woff2') format('woff2'),
+                url('/fonts/LexendDeca-Regular.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Gilroy-BoldItalic';
+            src: url('/fonts/Gilroy-BoldItalic.woff2') format('woff2'),
+                url('/fonts/Gilroy-BoldItalic.woff') format('woff');
+            font-weight: bold;
+            font-style: italic;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Gilroy';
+            src: url('/fonts/Gilroy-HeavyItalic.woff2') format('woff2'),
+                url('/fonts/Gilroy-HeavyItalic.woff') format('woff');
+            font-weight: 900;
+            font-style: italic;
+            font-display: swap;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Lexend Deca';
+        }
+
+        .li_line::before,
+        .left_line::before{
+            content: '';
+            position: absolute;
+            width: 1px;
+            height: 35px;
+            background: #69716E;
+            opacity: 0.1;
+            left: -30px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .li_line::before{
+            background: rgb(16, 72, 74);
+            height: 18px;
+            left: -15px;
+            opacity: 1;
+        }
+        @media (max-width : 600px) { 
+            .main_email_body{
+                zoom: 0.9;
+            }
+        }
+        @media (max-width : 400px) { 
+            .padding_res{
+                padding: 14px !important;
+            }
+            .li_line::before{
+                left: -6px;
+            }
+            .left_line::before{
+                left: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main_email_body" style="background-color: #e0e3e5; display: inline-block; width: 100%;">
+        <div class="padding_res" style="background-color: #ffffff; display: table; margin: 0 auto; padding: 32px; border: 1px solid #E8E8E8; border-radius: 24px;">
+            <div style="max-width: 520px; margin: 0 auto; width: 100%; background-color: #ffffff; border: 1px solid #f6f6f6; border-radius: 12px;">
+                <div style="background-image: url(/img/Background.png); text-align: center; background-size: cover; border-radius: 12px 12px 0 0;">
+                    <div>
+                        <h4 style="padding: 24px 0; display: flex; align-items: center; justify-content: center;">
+                            <a href="#">
+                                <img src="img/logo.svg" alt="logo">
+                            </a>
+                        </h4>
+                    </div>
+                    <div style="padding: 8px 16px; background-color: #90DAE1; backdrop-filter: blur(12px);">
+                        <ul type="none"
+                            style="display: flex; justify-content: space-between; font-size: 14px; font-weight: 500; ">
+                            <li>
+                                <a href="#" style="color: #10484A;">Love & Relationship </a>
+                            </li>
+                            <li  class="li_line" style="position: relative;">
+                                <a href="#" style="color: #10484A;">Psychic Reading </a>
+                            </li>
+                            <li  class="li_line" style="position: relative;">
+                                <a href="#" style="color: #10484A;">Life Path </a>
+                            </li>
+                            <li  class="li_line" style="position: relative;">
+                                <a href="#" style="color: #10484A;">Tarot Reading </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h1 style="padding: 24px 5px; font-size: 42px; font-weight: 400; font-family: 'Gilroy'; color: #ffffff; text-shadow: 0px 3px 0px rgba(0, 0, 0, 0.25); -webkit-text-stroke-width: 1px; -webkit-text-stroke-color: rgba(21, 35, 36, 0.50); line-height: 50px; letter-spacing: 0.84px; text-transform: capitalize;"> In return for your support</h1>
+                    </div>
+                    <div>
+                        <img src="img/Frame9486.png" alt="" style="margin: 0 auto 24px; max-width: 400px; width: 94%;">
+                    </div>
+                </div>
+                <div style="padding: 12px 32px; text-align: center; background: linear-gradient(90deg, rgba(213,213,213,1) 0%, rgba(207,229,230,1) 100%); backdrop-filter: blur(52px); ">
+                    <p style="font-size: 16px; font-family: 'Gilroy-BoldItalic'; color: #114a4dcc;">Your first purchase was fantastic, and we want to make your next one even better.</p>
+                </div>
+                <div class="padding_res" style="padding: 35px; background-color: #f9f9f9;">
+                    <div style="text-align: left;">
+                        <h3 style="margin-bottom: 10px; font-size: 20px; font-weight: 600;">Top Advisors for You!</h3>
+                    </div>
+                    <div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+                        <div class="profile" style="margin: 11px 0; width: 48%; background-color: #ffffff; border: 1px solid #F0F0F0; border-radius: 8px;">
+                            <div class="profile_pic">
+                                <img src="img/img1.png" alt="" style="border-radius: 8px 8px 0 0; width: 100%;">
+                            </div>
+                            <div style="padding: 11px;">
+                                <div style="margin-bottom: 6px; display: flex; justify-content: space-between;">
+                                    <span style="color: #331417; font-size: 14px; font-weight: 600;">Jodi</span>
+                                    <img src="img/Frame_1.svg" alt="">
+                                </div>
+                                <div>
+                                    <p style="margin-bottom: 10px; color: #331417b3; font-size: 12px; font-weight: 400;"> Spirit Led Readings</p>
+                                </div>
+                                <div class="joined" style="display: flex; justify-content: space-between;">
+                                    <div>
+                                        <span style="margin-bottom: 2px; color: #8452DB; font-size: 14px; font-weight: 600;">1,907</span>
+                                        <p style="color: #1a2123cc; font-size: 12px; font-weight: 400;">Readings</p>
+                                    </div>
+                                    <div  class="left_line" style="position: relative;">
+                                        <span style="margin-bottom: 2px; color: #51A663; font-size: 14px; font-weight: 600;">1,907</span>
+                                        <p style="color: #1a2123cc; font-size: 12px; font-weight: 400;">Readings</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile" style="margin: 11px 0; width: 48%; background-color: #ffffff; border: 1px solid #F0F0F0; border-radius: 8px;">
+                            <div class="profile_pic">
+                                <img src="img/img1.png" alt="" style="border-radius: 8px 8px 0 0; width: 100%;">
+                            </div>
+                            <div style="padding: 11px;">
+                                <div style="margin-bottom: 6px; display: flex; justify-content: space-between;">
+                                    <span style="color: #331417; font-size: 14px; font-weight: 600;">Jodi</span>
+                                    <img src="img/Frame_1.svg" alt="">
+                                </div>
+                                <div>
+                                    <p style="margin-bottom: 10px; color: #331417b3; font-size: 12px; font-weight: 400;"> Spirit Led Readings</p>
+                                </div>
+                                <div class="joined" style="display: flex; justify-content: space-between;">
+                                    <div>
+                                        <span style="margin-bottom: 2px; color: #8452DB; font-size: 14px; font-weight: 600;">1,907</span>
+                                        <p style="color: #1a2123cc; font-size: 12px; font-weight: 400;">Readings</p>
+                                    </div>
+                                    <div class="left_line" style="position: relative;">
+                                        <span style="margin-bottom: 2px; color: #51A663; font-size: 14px; font-weight: 600;">1,907</span>
+                                        <p style="color: #1a2123cc; font-size: 12px; font-weight: 400;">Readings</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile" style="margin: 11px 0; width: 48%; background-color: #ffffff; border: 1px solid #F0F0F0; border-radius: 8px;">
+                            <div class="profile_pic">
+                                <img src="img/img1.png" alt="" style="border-radius: 8px 8px 0 0; width: 100%;">
+                            </div>
+                            <div style="padding: 11px;">
+                                <div style="margin-bottom: 6px; display: flex; justify-content: space-between;">
+                                    <span style="color: #331417; font-size: 14px; font-weight: 600;">Jodi</span>
+                                    <img src="img/Frame_1.svg" alt="">
+                                </div>
+                                <div>
+                                    <p style="margin-bottom: 10px; color: #331417b3; font-size: 12px; font-weight: 400;"> Spirit Led Readings</p>
+                                </div>
+                                <div class="joined" style="display: flex; justify-content: space-between;">
+                                    <div>
+                                        <span style="margin-bottom: 2px; color: #8452DB; font-size: 14px; font-weight: 600;">1,907</span>
+                                        <p style="color: #1a2123cc; font-size: 12px; font-weight: 400;">Readings</p>
+                                    </div>
+                                    <div class="left_line" style="position: relative;">
+                                        <span style="margin-bottom: 2px; color: #51A663; font-size: 14px; font-weight: 600;">1,907</span>
+                                        <p style="color: #1a2123cc; font-size: 12px; font-weight: 400;">Readings</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile" style="margin: 11px 0; width: 48%; background-color: #ffffff; border: 1px solid #F0F0F0; border-radius: 8px;">
+                            <div class="profile_pic">
+                                <img src="img/img1.png" alt="" style="border-radius: 8px 8px 0 0; width: 100%;">
+                            </div>
+                            <div style="padding: 11px;">
+                                <div style="margin-bottom: 6px; display: flex; justify-content: space-between;">
+                                    <span style="color: #331417; font-size: 14px; font-weight: 600;">Jodi</span>
+                                    <img src="img/Frame_1.svg" alt="">
+                                </div>
+                                <div>
+                                    <p style="margin-bottom: 10px; color: #331417b3; font-size: 12px; font-weight: 400;"> Spirit Led Readings</p>
+                                </div>
+                                <div style="display: flex; justify-content: space-between;">
+                                    <div>
+                                        <span style="margin-bottom: 2px; color: #8452DB; font-size: 14px; font-weight: 600;">1,907</span>
+                                        <p style="color: #1a2123cc; font-size: 12px; font-weight: 400;">Readings</p>
+                                    </div>
+                                    <div class="left_line" style="position: relative;">
+                                        <span style="margin-bottom: 2px; color: #51A663; font-size: 14px; font-weight: 600;">1,907</span>
+                                        <p style="color: #1a2123cc; font-size: 12px; font-weight: 400;">Readings</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="padding_res" style="padding: 0 35px 35px; background-color: #f9f9f9; border-radius: 0 0 12px 12px;">
+                    <div style="text-align: left;">
+                        <h3 style="margin-bottom: 10px; font-size: 20px; font-weight: 600;">How to use coupon</h3>
+                    </div>
+                    <div style="display: flex; justify-content: space-between;">
+                        <div style="width: 48%; padding: 24px;background-color: #ffffff; border: 1px solid #F0F0F0; border-radius: 16px;">
+                            <div>
+                                <img src="/img/mobile1.png" alt="mobile1" style="width: 100%; height: 141px;">
+                            </div>
+                            <div style="margin-top: 16px;">
+                                <span style="margin-bottom: 8px; font-size: 14px; font-weight: 500; color: #33141e99; text-transform: uppercase; letter-spacing: 0.42px;">Step 1</span>
+                                <h4 style=" font-size: 18px; font-weight: 600; line-height: 26px; letter-spacing: -0.36px; color: #1B1918;"> Click on <span style="color: #51A663;">“Coupons”</span></h4>
+                            </div>
+                        </div>
+                        <div style="width: 48%; padding: 24px;background-color: #ffffff; border: 1px solid #F0F0F0; border-radius: 16px;">
+                            <div style="text-align: center;">
+                                <img src="/img/mobile2.png" alt="mobile2" style="max-width: 113px; width: 100%; height: 141px;">
+                            </div>
+                            <div style="margin-top: 16px;">
+                                <span style="margin-bottom: 8px; font-size: 14px; font-weight: 500; color: #33141e99; text-transform: uppercase; letter-spacing: 0.42px;">Step
+                                    1</span>
+                                <h4 style=" font-size: 18px; font-weight: 600; line-height: 26px; letter-spacing: -0.36px; color: #1B1918;"> Click on <span style="color: #51A663;">“Coupons”</span></h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center;">
+                <p
+                    style="font-size: 12px;font-weight: 400; line-height: 18px; color: rgba(51, 20, 23, 0.70); width: 80%; margin: 16px auto 0;">
+                    If you have any questions, please reach out to us at <a href="#" style="color: #331417;">support@psychictxt.com</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

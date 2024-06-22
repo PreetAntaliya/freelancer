@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTX - Diposit</title>
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    </link>
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="./assets/css/font-awesome.min.css"></link>
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css"></link>
+
+</head>
+
+<body class="white-2 contain">
+    <header>
+        <div class="d-flex justify-content-between">
+            <div class="logo">
+                <img src="assets/img/logo.svg" alt="logo">
+            </div>
+            <div class="top-menu d-flex align-items-center position-relative">
+                <nav class=" d-xl-block  d-sm-none d-xs-none">
+                    <ul class="d-flex align-items-xl-center align-items-lg-start" type="none">
+                        <li>
+                            <a href="profile.html"><i class="me-2 fa-solid fa-user"></i>Profile</a>
+                        </li>
+                        <li class="top-bar-active">
+                            <a href="#"><i class="me-2 fa-solid fa-clipboard"></i>Report</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="me-2 fa-solid fa-share-nodes"></i>Social Trade</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="me-2 fa-solid fa-vector-square"></i>Referral</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="me-2 fa-solid fa-earth-americas"></i>Web Trader</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="top-end-menu d-flex align-items-center">
+                    <div class="language align-items-center d-flex">
+                        <img class="px-2" src="assets/img/Group-2.svg" alt="language">
+                        <span class="position-relative">EN</span>
+                    </div>
+                    <div class="notification me-3">
+                        <img src="assets/img/bell.svg" alt="notification">
+                    </div>
+                    <div class="profile-img">
+                        <img src="assets/img/profile.png" alt="profile-pic">
+                    </div>
+                </div>
+                <div class="menu-icon d-xl-none d-sm-flex" id="toggle">
+                    <i class="fa-solid fa-bars" id="icon"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="bottom-header d-xl-none d-sm-block">
+        <div>
+            <ul class="d-flex align-items-center justify-content-evenly w-100 text-center my-2" type="none">
+                <li>
+                    <a href="profile.html"><i class="fa-solid fa-user"></i><br>Profile</a>
+                </li>
+                <li class="bottom-active">
+                    <a href="#"><i class="fa-solid fa-clipboard"></i><br>Report</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-share-nodes"></i><br>Social Trade</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-vector-square"></i><br>Referral</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-earth-americas"></i><br>Web Trader</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-content d-flex flex-column justify-content-between">
+        <main>
+            <div class="d-flex position-relative">
+                <div class="side-bar responsive d-xl-block d-sm-none d-xs-none" id="add-class">
+                    <div class="cross text-end d-xl-none" id="cross">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="balance text-center">
+                        <h4>Wallet Balance</h4>
+                        <span>$ 90.95</span>
+                    </div>
+                    <div class="side-menu">
+                        <ul class="m-0 p-0" type="none">
+                            <li>
+                                <a href="account.html"><span><img src="assets/img/home_2_fill.svg" alt="Home">Account</span> <img src="assets/img/right_filled.svg" alt="right arrow"></a>
+                            </li>
+                            <li>
+                                <a href="deposit.html"><span><img src="assets/img/upload.svg" alt="Deposit">Deposit</span> <img src="assets/img/right_filled.svg" alt="right arrow"></a>
+                            </li>
+                            <li>
+                                <a href="cryptodeposit.html"><span><img src="assets/img/logout.svg" alt="Cryptodeposit">Cryptodeposit</span> <img src="assets/img/right_filled.svg" alt="right arrow"></a>
+                            </li>
+                            <li>
+                                <a href="withdraw.html"><span><img src="assets/img/download.svg" alt="Withdraw">Withdraw</span> <img src="assets/img/right_filled.svg" alt="right arrow"></a>
+                            </li>
+                            <li>
+                                <a href="cryptowithdraw.html"><span><img src="assets/img/login.svg" alt="Cryptowithdraw">Cryptowithdraw</span> <img src="assets/img/right_filled.svg" alt="right arrow"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="report-top w-100">
+                    <div class="d-flex flex-wrap align-items-center justify-content-between justify-xs-center">
+                        <div class="show-entry d-flex align-items-center order-xs-2">
+                            <h6>Show</h6>
+                            <select name="list" id="list">
+                                <option value="">10</option>
+                            </select>
+                            <h6>Entries</h6>
+                        </div>
+                        <div class="report-top-search position-relative">
+                            <input type="text" class="search" placeholder="Search">
+                            <img src="assets/img/search.svg" alt="search-icon">
+                        </div>
+                    </div>
+                    <div class="report-data white-color my-4">
+                        <div class="set-scroll">
+                            <div class="report-menu">
+                                <ul class="d-flex justify-content-between p-0" type="none">
+                                    <li>
+                                        <a href="report.html">Deposit Report</a>
+                                    </li>
+                                    <li>
+                                        <a href="withdraw-report.html">Withdraw Report</a>
+                                    </li>
+                                    <li>
+                                        <a href="wallet-report.html">Wallet Report</a>
+                                    </li>
+                                    <li class="report-active">
+                                        <a href="#">Transfer Report</a>
+                                    </li>
+                                    <li>
+                                        <a href="reward-report.html">Reward Report</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="rp-data">
+                                <table class="w-100">
+                                    <thead class="white-3 text-center">
+                                        <tr>
+                                            <td>Id <img src="assets/img/down-up-arrow.svg" alt="arrow"></td>
+                                            <td>Amount <img src="assets/img/down-up-arrow.svg" alt="arrow"></td>
+                                            <td>From Account <img src="assets/img/down-up-arrow.svg" alt="arrow"></td>
+                                            <td>To Account <img src="assets/img/down-up-arrow.svg" alt="arrow"></td>
+                                            <td>Date <img src="assets/img/down-up-arrow.svg" alt="arrow"></td>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="text-center">
+                                        <tr>
+                                            <td>1</td>
+                                            <td>100</td>
+                                            <td>12Pay</td>
+                                            <td>5555511245</td>
+                                            <td>2023-10-31 17:30:34</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="show-all-page d-flex flex-wrap align-items-center justify-content-between">
+                        <div>
+                            <span>Showing 1 to 2 of 2 entires</span>
+                        </div>
+                        <div class="pagination">
+                            <ul class="d-flex justify-content-evenly align-items-center m-0 p-0" type="none">
+                                <li>
+                                    <a href="#"><img src="assets/img/left-arrow.svg" alt="arrow"></a>
+                                </li>
+                                <li class="pagination-active">
+                                    <a href="#">1</a>
+                                </li>
+                                <li>
+                                    <a href="#">2</a>
+                                </li>
+                                <li>
+                                    <a href="#">3</a>
+                                </li>
+                                <li>
+                                    <a href="#">4</a>
+                                </li>
+                                <li>
+                                    <a href="#">...</a>
+                                </li>
+                                <li>
+                                    <a href="#">32</a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="assets/img/right-arrow.svg" alt="arrow"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    
+        <footer>
+            <div class="footer-menu d-flex flex-wrap justify-content-between align-items-center text-color">
+                <span>Reserved@ctxprop@2023</span>
+                <ul class="d-flex flex-wrap my-1 p-0" type="none">
+                    <li>
+                        <a href="#">Support</a>
+                    </li>
+                    <li>
+                        <a href="#">Terms of Service</a>
+                    </li>
+                    <li>
+                        <a href="#">Risk Disclosure</a>
+                    </li>
+                    <li>
+                        <a href="#">Cookie Policy</a>
+                    </li>
+                </ul>
+            </div>
+            <p class="text-color">This website is not directed at any jurisdiction and is not intended for any use that would be contrary to local law or regulation.</p>
+        </footer>
+    </div>
+
+    <script src="assets/js/jquery-3.6.4.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

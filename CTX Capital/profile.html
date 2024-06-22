@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTX - Diposit</title>
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    </link>
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="./assets/css/font-awesome.min.css"></link>
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css"></link>
+
+</head>
+
+<body class="white-2 contain">
+    <header>
+        <div class="d-flex justify-content-between">
+            <div class="logo">
+                <img src="assets/img/logo.svg" alt="logo">
+            </div>
+            <div class="top-menu d-flex align-items-center position-relative">
+                <nav class=" d-xl-block  d-sm-none d-xs-none">
+                    <ul class="d-flex align-items-xl-center align-items-lg-s mb-3tart" type="none">
+                        <li class="top-bar-active">
+                            <a href="profile.html"><i class="me-2 fa-solid fa-user"></i>Profile</a>
+                        </li>
+                        <li>
+                            <a href="report.html"><i class="me-2 fa-solid fa-clipboard"></i>Report</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="me-2 fa-solid fa-share-nodes"></i>Social Trade</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="me-2 fa-solid fa-vector-square"></i>Referral</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="me-2 fa-solid fa-earth-americas"></i>Web Trader</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="top-end-menu d-flex align-items-center">
+                    <div class="language align-items-center d-flex">
+                        <img class="px-2" src="assets/img/Group-2.svg" alt="language">
+                        <span class="position-relative">EN</span>
+                    </div>
+                    <div class="notification me-3">
+                        <img src="assets/img/bell.svg" alt="notification">
+                    </div>
+                    <div class="profile-img">
+                        <img src="assets/img/profile.png" alt="profile-pic">
+                    </div>
+                </div>
+                <div class="menu-icon d-xl-none d-sm-flex" id="toggle">
+                    <i class="fa-solid fa-bars" id="icon"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="bottom-header d-xl-none d-sm-block">
+        <div>
+            <ul class="d-flex align-items-center justify-content-evenly w-100 text-center my-2" type="none">
+                <li class="bottom-active">
+                    <a href="profile.html"><i class="fa-solid fa-user"></i><br>Profile</a>
+                </li>
+                <li>
+                    <a href="report.html"><i class="fa-solid fa-clipboard"></i><br>Report</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-share-nodes"></i><br>Social Trade</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-vector-square"></i><br>Referral</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-earth-americas"></i><br>Web Trader</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-content d-flex flex-column justify-content-between">
+        <main>
+            <div class="d-flex position-relative">
+                <div class="side-bar responsive d-xl-block d-sm-none d-xs-none" id="add-class">
+                    <div class="cross text-end d-xl-none" id="cross">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="balance text-center">
+                        <h4>Wallet Balance</h4>
+                        <span>$ 90.95</span>
+                    </div>
+                    <div class="side-menu">
+                        <ul class="m-0 p-0" type="none">
+                            <li>
+                                <a href="account.html"><span><img src="assets/img/home_2_fill.svg" alt="Home">Account</span> <img src="assets/img/right_filled.svg" alt="right arrow"></a>
+                            </li>
+                            <li>
+                                <a href="deposit.html"><span><img src="assets/img/upload.svg" alt="Deposit">Deposit</span> <img src="assets/img/right_filled.svg" alt="right arrow"></a>
+                            </li>
+                            <li>
+                                <a href="cryptodeposit.html"><span><img src="assets/img/logout.svg" alt="Cryptodeposit">Cryptodeposit</span> <img src="assets/img/right_filled.svg" alt="right arrow"></a>
+                            </li>
+                            <li>
+                                <a href="withdraw.html"><span><img src="assets/img/download.svg" alt="Withdraw">Withdraw</span> <img src="assets/img/right_filled.svg" alt="right arrow"></a>
+                            </li>
+                            <li>
+                                <a href="cryptowithdraw.html"><span><img src="assets/img/login.svg" alt="Cryptowithdraw">Cryptowithdraw</span> <img src="assets/img/right_filled.svg" alt="right arrow"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="profile w-100 h-100">
+                    <div class="profile-data white-color">
+                        <div class="row align-items-center">
+                            <div class="col-lg-10 col-md-9 order-lg-1 order-sm-2 order-xs-2">
+                                <div class="profile-heading">
+                                    <h4>Personal Information</h4>
+                                </div>
+                                <div class="row flex-wrap mb-3 align-items-center">
+                                     <div class="col-lg-3 col-sm-6">
+                                         <label for="name">Name</label>
+                                         <input class="d-block" type="text" id="name" placeholder="John">
+                                     </div>
+                                     <div class="col-lg-3 col-sm-6">
+                                         <label for="email">Email Address</label>
+                                         <input class="d-block" type="email" id="email" placeholder="John@gmail.com">
+                                     </div>
+                                     <div class="col-lg-3 col-sm-6">
+                                         <label for="mobile-num">Mobile Number:</label>
+                                         <input class="d-block" type="text" id="mobile-num" placeholder="1245124556">
+                                     </div>
+                                     <div class="col-lg-3 col-sm-6">
+                                         <label for="gender">Gender</label>
+                                         <select name="gender" id="gender">
+                                            <option value="" selected disabled>Gender</option>
+                                         </select>
+                                     </div>
+                                </div>
+                                <div class="row mb-4">
+                                    <div class="col-sm-6">
+                                        <label for="id-number">ID Number:</label>
+                                        <input class="d-block" type="text" id="id-number" placeholder="365284694">
+                                    </div>
+                                    <div class="col-sm-6 position-relative">
+                                        <label for="password">Password</label>
+                                        <input class="d-block" type="text" id="password" placeholder="Nam@11245">
+                                        <span class="pass-change position-absolute">change</span>
+                                    </div>
+                                </div>
+                                <div class="row mb-4">
+                                    <div class="col-lg-3 col-sm-6">
+                                        <label for="birthdate">Birthdate</label>
+                                        <input type="date" name="birthdate" id="birthdate" value="1990-10-28">
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6">
+                                        <label for="id-card">ID card</label>
+                                        <input type="text" name="id-card" id="id-card" placeholder="Driving license">
+                                    </div>
+                                    <div class="col-lg-6 col-sm-12">
+                                        <label for="registration-data">Registration Date:</label>
+                                        <input type="date" name="date" id="registration-data" value="2023-07-17">
+                                    </div>
+                                </div>
+                                <div class="mt-5">
+                                    <button class="submit-btn">Update</button>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-3 order-lg-2 d-flex justify-content-center">
+                                <div class="profile-pic position-relative">
+                                    <img class="prof-img" src="assets/img/profile-2.png" alt="profile-pic">
+                                    <img class="camera position-absolute" src="assets/img/camera.svg" alt="camera-img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="document white-color my-4">
+                        <div class="doc-title">
+                            <h5>Document Upload</h5>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <div class="doc-content d-flex justify-content-between align-items-center">
+                                    <p class="m-0">Proof of Identity(POI)</p>
+                                    <a href="#">See Example</a>
+                                </div>
+                                <div class="drop-file d-flex align-items-center justify-content-center">
+                                    <div class="drop-zone">
+                                        <span class="drop-zone__prompt">Drop files here  to uplaod</span>
+                                        <input type="file" name="myFile" class="drop-zone__input">
+                                      </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-9">
+                                <div class="all-docs">
+                                    <p>Uploaded Documents</p>
+                                </div>
+                                <div class="overflow-auto">
+                                    <table class="w-100 text-center">
+                                        <thead>
+                                            <tr>
+                                                <td>Sr. No.</td>
+                                                <td>Document Type</td>
+                                                <td>Uploaded File</td>
+                                                <td>Status</td>
+                                                <td>Comment</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>001</td>
+                                                <td>Driving Liecense</td>
+                                                <td class="see-file">See File</td>
+                                                <td class="approved">Approved</td>
+                                                <td>Empty</td>
+                                            </tr>
+                                            <tr>
+                                                <td>001</td>
+                                                <td>Driving Liecense</td>
+                                                <td class="see-file">See File</td>
+                                                <td class="approved">Approved</td>
+                                                <td>Empty</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bank my-4 white-color">
+                        <div class="bank-title">
+                            <h5>Bank Details</h5>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4 mb-3">
+                                <div>
+                                    <label for="account-name">Account Name <span class="red-star">*</span></label>
+                                    <input class="d-block w-100" type="text" name="dev-acc" id="account-name" placeholder="Dev Account">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 mb-3">
+                                <div>
+                                    <label for="account-num">Account Number: <span class="red-star">*</span></label>
+                                    <input class="d-block w-100" type="text" name="dev-acc" id="account-num" placeholder="Enter Account Number">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 mb-3">
+                                <div>
+                                    <label for="bank-name">Bank Name <span class="red-star">*</span></label>
+                                    <select name="bank" id="bank-name">
+                                        <option value="" selected disabled>---Please Select Bank---</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 mb-3">
+                                <div>
+                                    <label for="swift-code">Swift Code <span class="red-star">*</span></label>
+                                    <select name="swift" id="swift-code">
+                                        <option value="" selected disabled>---Please Swift Code---</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 mb-3">
+                                <div class="position-relative">
+                                    <label for="book-bank">Book Bank <span class="red-star">*</span></label>
+                                    <input class="d-block w-100" type="text" name="book-bank" id="book-bank" placeholder="No file Choosen">
+                                    <span class="upload-span position-absolute">Upload</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 mb-3">
+                                <div>
+                                    <label for="country">Country <span class="red-star">*</span></label>
+                                    <select name="country" id="country">
+                                        <option value="" selected disabled>Thailand</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <button class="submit-btn">Submit</button>
+                        </div>
+                        <div class="mt-4 overflow-auto">
+                            <table class="acc-list w-100 text-center">
+                                <thead>
+                                    <tr>
+                                        <td>Account Name</td>
+                                        <td>Account No,</td>
+                                        <td>Swift Code</td>
+                                        <td>Bank Name</td>
+                                        <td>Bank Address</td>
+                                        <td>Country</td>
+                                        <td>Action</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Name</td>
+                                        <td>51442146611214</td>
+                                        <td>kbnksn1245</td>
+                                        <td>Axisbank</td>
+                                        <td>Any bank</td>
+                                        <td>Thailand</td>
+                                        <td class="approved">Delete</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    
+        <footer>
+            <div class="footer-menu d-flex flex-wrap justify-content-between align-items-center text-color">
+                <span>Reserved@ctxprop@2023</span>
+                <ul class="d-flex flex-wrap my-1 p-0" type="none">
+                    <li>
+                        <a href="#">Support</a>
+                    </li>
+                    <li>
+                        <a href="#">Terms of Service</a>
+                    </li>
+                    <li>
+                        <a href="#">Risk Disclosure</a>
+                    </li>
+                    <li>
+                        <a href="#">Cookie Policy</a>
+                    </li>
+                </ul>
+            </div>
+            <p class="text-color">This website is not directed at any jurisdiction and is not intended for any use that would be contrary to local law or regulation.</p>
+        </footer>
+    </div>
+
+    <script src="assets/js/jquery-3.6.4.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

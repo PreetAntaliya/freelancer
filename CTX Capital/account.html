@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTX - Diposit</title>
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="./assets/css/font-awesome.min.css">
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+
+<body class="white-2 contain">
+    <header>
+        <div class="d-flex justify-content-between">
+            <div class="logo">
+                <img src="assets/img/logo.svg" alt="logo">
+            </div>
+            <div class="top-menu d-flex align-items-center position-relative">
+                <nav class=" d-xl-block  d-sm-none d-xs-none">
+                    <ul class="d-flex align-items-xl-center align-items-lg-start" type="none">
+                        <li>
+                            <a href="profile.html"><i class="me-2 fa-solid fa-user"></i>Profile</a>
+                        </li>
+                        <li>
+                            <a href="report.html"><i class="me-2 fa-solid fa-clipboard"></i>Report</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="me-2 fa-solid fa-share-nodes"></i>Social Trade</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="me-2 fa-solid fa-vector-square"></i>Referral</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="me-2 fa-solid fa-earth-americas"></i>Web Trader</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="top-end-menu d-flex align-items-center">
+                    <div class="language align-items-center d-flex">
+                        <img class="px-2" src="assets/img/Group-2.svg" alt="language">
+                        <span class="position-relative">EN</span>
+                    </div>
+                    <div class="notification me-3">
+                        <img src="assets/img/bell.svg" alt="notification">
+                    </div>
+                    <div class="profile-img">
+                        <img src="assets/img/profile.png" alt="profile-pic">
+                    </div>
+                </div>
+                <div class="menu-icon d-xl-none d-sm-flex" id="toggle">
+                    <i class="fa-solid fa-bars" id="icon"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="bottom-header d-xl-none d-sm-block">
+        <div>
+            <ul class="d-flex align-items-center justify-content-evenly w-100 text-center my-2" type="none">
+                <li>
+                    <a href="profile.html"><i class="fa-solid fa-user"></i><br>Profile</a>
+                </li>
+                <li>
+                    <a href="report.html"><i class="fa-solid fa-clipboard"></i><br>Report</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-share-nodes"></i><br>Social Trade</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-vector-square"></i><br>Referral</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-earth-americas"></i><br>Web Trader</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-content d-flex flex-column justify-content-between">
+        <main>
+            <div class="d-flex position-relative">
+                <div class="side-bar responsive d-xl-block d-sm-none d-xs-none" id="add-class">
+                    <div class="cross text-end d-xl-none" id="cross">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="balance text-center">
+                        <h4>Wallet Balance</h4>
+                        <span>$ 90.95</span>
+                    </div>
+                    <div class="side-menu">
+                        <ul class="m-0 p-0" type="none">
+                            <li class="side-active">
+                                <a href="#"><span><img src="assets/img/home_2_fill.svg" alt="Home">Account</span> <img
+                                        src="assets/img/right_filled.svg" alt="right arrow"></a>
+                            </li>
+                            <li>
+                                <a href="deposit.html"><span><img src="assets/img/upload.svg"
+                                            alt="Deposit">Deposit</span> <img src="assets/img/right_filled.svg"
+                                        alt="right arrow"></a>
+                            </li>
+                            <li>
+                                <a href="cryptodeposit.html"><span><img src="assets/img/logout.svg"
+                                            alt="Cryptodeposit">Cryptodeposit</span> <img
+                                        src="assets/img/right_filled.svg" alt="right arrow"></a>
+                            </li>
+                            <li>
+                                <a href="withdraw.html"><span><img src="assets/img/download.svg"
+                                            alt="Withdraw">Withdraw</span> <img src="assets/img/right_filled.svg"
+                                        alt="right arrow"></a>
+                            </li>
+                            <li>
+                                <a href="cryptowithdraw.html"><span><img src="assets/img/login.svg"
+                                            alt="Cryptowithdraw">Cryptowithdraw</span> <img
+                                        src="assets/img/right_filled.svg" alt="right arrow"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="w-100">
+                    <div class="account white-color">
+                        <div class="account-detail">
+                            <h3>Hello, Account Name</h3>
+                            <p>Welcome to your profile! This is your dedicated space where you can customize your
+                                preferences, view your personal information, and manage various aspects of your account
+                            </p>
+                        </div>
+                        <div class="row mt-md-4 mt-sm-3 flex-wrap">
+                            <div class="col-md-4 mt-3 ">
+                                <div class="account-box">
+                                    <div class="account-title">
+                                        <h6 class="m-0">2132012721 ( CENT )</h6>
+                                    </div>
+                                    <div class="account-content">
+                                        <table class="w-100">
+                                            <tr>
+                                                <td>Balance</td>
+                                                <td class="text-end">1099USC</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Credit</td>
+                                                <td class="text-end">0 USC</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Leverage</td>
+                                                <td class="text-end">1000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Master Password</td>
+                                                <td class="text-end">xrf1Wo</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Investor Password</td>
+                                                <td class="text-end">uw8UAGB</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mt-3 ">
+                                <div class="account-box">
+                                    <div class="account-title">
+                                        <h6 class="m-0">2132021423 ( STD )</h6>
+                                    </div>
+                                    <div class="account-content">
+                                        <table class="w-100">
+                                            <tr>
+                                                <td>Balance</td>
+                                                <td class="text-end">1099USC</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Credit</td>
+                                                <td class="text-end">0 USC</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Leverage</td>
+                                                <td class="text-end">1000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Master Password</td>
+                                                <td class="text-end">xrf1Wo</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Investor Password</td>
+                                                <td class="text-end">uw8UAGB</td>
+                                            </tr>
+                                        </table>
+                                        <div>
+                                            <button class="delete-acc">Delete Account</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mt-3 ">
+                                <div class="account-box">
+                                    <div class="account-title">
+                                        <h6 class="m-0">2132021431 ( STD )</h6>
+                                    </div>
+                                    <div class="account-content">
+                                        <table class="w-100">
+                                            <tr>
+                                                <td>Balance</td>
+                                                <td class="text-end">1099USC</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Credit</td>
+                                                <td class="text-end">0 USC</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Leverage</td>
+                                                <td class="text-end">1000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Master Password</td>
+                                                <td class="text-end">xrf1Wo</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Investor Password</td>
+                                                <td class="text-end">uw8UAGB</td>
+                                            </tr>
+                                        </table>
+                                        <div>
+                                            <button class="delete-acc">Delete Account</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mt-3 ">
+                                <div class="account-box">
+                                    <div class="account-title">
+                                        <h6 class="m-0">2132022897 ( STD )</h6>
+                                    </div>
+                                    <div class="account-content">
+                                        <table class="w-100">
+                                            <tr>
+                                                <td>Balance</td>
+                                                <td class="text-end">1099USC</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Credit</td>
+                                                <td class="text-end">0 USC</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Leverage</td>
+                                                <td class="text-end">1000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Master Password</td>
+                                                <td class="text-end">xrf1Wo</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Investor Password</td>
+                                                <td class="text-end">uw8UAGB</td>
+                                            </tr>
+                                        </table>
+                                        <div>
+                                            <button class="delete-acc">Delete Account</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mt-3 ">
+                                <div class="account-box">
+                                    <div class="account-title">
+                                        <h6 class="m-0">2132023243 ( CENT )</h6>
+                                    </div>
+                                    <div class="account-content">
+                                        <table class="w-100">
+                                            <tr>
+                                                <td>Balance</td>
+                                                <td class="text-end">1099USC</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Credit</td>
+                                                <td class="text-end">0 USC</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Leverage</td>
+                                                <td class="text-end">1000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Master Password</td>
+                                                <td class="text-end">xrf1Wo</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Investor Password</td>
+                                                <td class="text-end">uw8UAGB</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mt-3 ">
+                                <div class="account-box">
+                                    <div class="account-title">
+                                        <h6 class="m-0">2132042890 ( STD )</h6>
+                                    </div>
+                                    <div class="account-content">
+                                        <table class="w-100">
+                                            <tr>
+                                                <td>Balance</td>
+                                                <td class="text-end">1099USC</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Credit</td>
+                                                <td class="text-end">0 USC</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Leverage</td>
+                                                <td class="text-end">1000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Master Password</td>
+                                                <td class="text-end">xrf1Wo</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Investor Password</td>
+                                                <td class="text-end">uw8UAGB</td>
+                                            </tr>
+                                        </table>
+                                        <div>
+                                            <button class="delete-acc">Delete Account</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-md-4 mt-sm-3 flex-wrap">
+
+                        </div>
+                    </div>
+                    <div class="row my-3">
+                        <div class="col-md-6 p-2">
+                            <div class="demo-user text-center">
+                                <img src="assets/img/user.svg" alt="Demo Account">
+                                <span class="d-block mt-3">Demo Account</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6 p-2">
+                            <div class="create-user text-center">
+                                <img src="assets/img/user_add_fill.svg" alt="create Account">
+                                <span class="d-block mt-3">Create Account</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 mt-3">
+                            <div class="all-account white-color">
+                                <div class="acc-title">
+                                    <h6>MT4 to Wallet</h6>
+                                </div>
+                                <div class="acc-detail">
+                                    <div>
+                                        <label for="select-acc">Select Your Account</label>
+                                        <select name="acc" id="select-acc">
+                                            <option value="" disabled selected>1241115646513498</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label for="select-acc" class="d-block">Amount(In USD)</label>
+                                        <input type="text" name="amount" id="amount">
+                                    </div>
+                                </div>
+                                <div>
+                                    <button class="delete-acc">Delete Account</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mt-3">
+                            <div class="all-account white-color">
+                                <div class="acc-title">
+                                    <h6>WALLET TO MT4</h6>
+                                </div>
+                                <div class="acc-detail">
+                                    <div>
+                                        <label for="select-acc">Select Your Account</label>
+                                        <select name="acc" id="select-acc">
+                                            <option value="" disabled selected>1241115646513498</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label for="select-acc" class="d-block">Amount(In USD)</label>
+                                        <input type="text" name="amount" id="amount">
+                                    </div>
+                                </div>
+                                <div>
+                                    <button class="delete-acc">Delete Account</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mt-3">
+                            <div class="all-account white-color">
+                                <div class="acc-title">
+                                    <h6>CHANGE MT4 ACCOUNT PASSWORD</h6>
+                                </div>
+                                <div class="acc-detail">
+                                    <div>
+                                        <label for="select-acc">Select Your Account</label>
+                                        <select name="acc" id="select-acc">
+                                            <option value="" disabled selected>1241115646513498</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label for="select-acc" class="d-block">Password</label>
+                                        <input type="text" name="amount" id="amount">
+                                    </div>
+                                </div>
+                                <div>
+                                    <button class="delete-acc">Delete Account</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wallet-to-wallet white-color my-4">
+                        <div class="acc-title">
+                            <h6>Wallet to Wallet</h6>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div>
+                                    <div class="acc-detail">
+                                        <label for="wallet-email">Email*</label>
+                                        <input type="email" name="email" id="wallet-email"
+                                            placeholder="Enter email address">
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="acc-detail">
+                                        <label for="otp">Wallet to Wallet*</label>
+                                        <div class="position-relative">
+                                            <input type="text" name="otp" id="otp" placeholder="Enter OTP">
+                                            <span class="position-absolute otp-time">00:15</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div>
+                                    <div class="acc-detail">
+                                        <label for="wallet-amount">Amount*</label>
+                                        <input type="text" name="amount" id="wallet-amount" placeholder="Enter Amount">
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="acc-detail">
+                                        <label for="otp">Note</label>
+                                        <textarea name="note" id="note" placeholder="Your Message here..."></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wallet-btn">
+                            <button>Request OTP</button>
+                            <button>Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-menu d-flex flex-wrap justify-content-between align-items-center text-color">
+                <span>Reserved@ctxprop@2023</span>
+                <ul class="d-flex flex-wrap my-1 p-0" type="none">
+                    <li>
+                        <a href="#">Support</a>
+                    </li>
+                    <li>
+                        <a href="#">Terms of Service</a>
+                    </li>
+                    <li>
+                        <a href="#">Risk Disclosure</a>
+                    </li>
+                    <li>
+                        <a href="#">Cookie Policy</a>
+                    </li>
+                </ul>
+            </div>
+            <p class="text-color">This website is not directed at any jurisdiction and is not intended for any use that
+                would be contrary to local law or regulation.</p>
+        </footer>
+    </div>
+
+    <script src="assets/js/jquery-3.6.4.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
